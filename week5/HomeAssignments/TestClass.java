@@ -22,7 +22,10 @@ public class TestClass extends ProjectSpecificMethod{
 		driver.findElement(By.xpath("//mark[contains(text(),'Legal Entities')]")).click();
 		
 		//Click on New Legal Entity
-		driver.findElement(By.xpath("//div[text()='New']")).click();
+		//Click on New Legal Entity
+		driver.findElement(By.xpath("(//*[local-name()='svg' and @data-key='chevrondown'])[6]")).click();
+		WebElement newL = driver.findElement(By.xpath("//a//span[text()='New Legal Entity']"));
+		driver.executeScript("arguments[0].click();", newL);
 		String len="Automation by Aish";
 		driver.findElement(By.xpath("(//input[@class='slds-input'])[2]")).sendKeys(len);
 		
