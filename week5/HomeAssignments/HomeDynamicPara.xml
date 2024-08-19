@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Aish - Home Assignment - Dynamic Parameterization">
+<parameter name="url" value="https://login.salesforce.com/"></parameter>
+<parameter name="uname" value="dilip@testleaf.com"></parameter>
+<parameter name="pwd" value="testleaf@2024"></parameter>
+	<parameter name="name" value=""></parameter>
+  <test thread-count="5" name="Test">
+	<classes>
+      <class name="week5.HomeAssignments.ClassforDynamicParameterization"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
