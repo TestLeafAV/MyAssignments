@@ -39,7 +39,7 @@ public class TestClass extends ProjectSpecificMethod{
 		driver.findElement(By.xpath("//span[text()='Active']")).click();
 		
 		//Click on Save
-		driver.findElement(By.xpath("(//button[contains(text(),\"Save\")])[2]")).click();
+		driver.findElement(By.xpath("(//button[contains(text(),'Save')])[2]")).click();
 		
 		//Verify the Alert message (Complete this field) displayed for Name
 		WebElement element = driver.findElement(By.xpath("//lightning-icon[@icon-name='utility:success']"));
