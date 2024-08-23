@@ -35,7 +35,7 @@ public String[][] setValue()
 		driver.findElement(By.xpath("//mark[contains(text(),'Legal Entities')]")).click();
 		
 		//Click on New Legal Entity
-		driver.findElement(By.xpath("(//*[local-name()='svg' and @data-key='chevrondown'])[6]")).click();
+		driver.findElement(By.xpath("//one-app-nav-bar-item-root[@data-id='0QkJ4000000sbf9KAA']//*[local-name()='svg']")).click();
 		WebElement newL = driver.findElement(By.xpath("//a//span[text()='New Legal Entity']"));
 		driver.executeScript("arguments[0].click();", newL);
 		
