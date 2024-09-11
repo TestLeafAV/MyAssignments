@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="LoginCreateAcc" parallel="classes" verbose="5">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="runner.TC01_LoginToApp"/>
+      <class name="runner.TC02_CreateAccount"/>
+      <class name="runner.TC03_Logout"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- LoginCreateAcc -->
